@@ -44,3 +44,4 @@ Desktop.ini
 # Mac crap
 .DS_Store
 
+/node_modules/

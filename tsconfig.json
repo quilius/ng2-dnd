@@ -1,27 +1,31 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true,
-    "module": "es2015",
     "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "declaration": true,
-    "moduleResolution": "node",
+    "removeComments": true,
+    "stripInternal": true,
     "types": [
       "hammerjs",
       "jasmine",
       "node"
     ],
-    "lib": ["es2015", "dom"]
+    "outDir": "lib_commonjs/",
+    "lib": ["es5", "dom"]
   },
-  "files": [
-    "public_api.ts"
+  "include": [
+    "src/**/*"
   ],
-  "exclude": [
-    "node_modules"
-  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
   "angularCompilerOptions": {
-    "strictMetadataEmit": true,
-    "skipTemplateCodegen": true
+    "decoratorsAs": "static fields",
+    "skipTemplateCodegen": true,
+    "preserveWhitespaces": false,
+    "enableIvy": true
   }
 }

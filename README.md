@@ -39,7 +39,7 @@ System.config({
 ```
 
 #### 1. Add the default styles
-- Import the `style.css` into your web page from `node_modules/ng2-dnd/bundles/style.css`
+- Import the `style.css` into your web page from `node_modules/ng2-dnd/style.css`
 
 #### 2. Import the `DndModule`
 Import `DndModule.forRoot()` in the NgModule of your application. 

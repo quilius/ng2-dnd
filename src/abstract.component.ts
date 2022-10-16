@@ -108,7 +108,7 @@ export abstract class AbstractComponent {
             this._onDragOver(event);
             //
             if (event.dataTransfer != null) {
-                event.dataTransfer.dropEffect = this._config.dropEffect.name;
+                event.dataTransfer.dropEffect = this._config.dropEffect.name as any;
             }
 
             return false;
@@ -138,7 +138,7 @@ export abstract class AbstractComponent {
             if (event.dataTransfer != null) {
                 event.dataTransfer.setData('text', '');
                 // Change drag effect
-                event.dataTransfer.effectAllowed = this.effectAllowed || this._config.dragEffect.name;
+                event.dataTransfer.effectAllowed = (this.effectAllowed || this._config.dragEffect.name) as any;
                 // Change drag image
                 if (isPresent(this.dragImage)) {
                     if (isString(this.dragImage)) {
