@@ -1,7 +1,7 @@
 {
   "name": "ng2-dnd",
   "description": "Angular 2 Drag-and-Drop without dependencies",
-  "version": "18.0.0",
+  "version": "20.0.0",
   "scripts": {
     "clean": "rimraf lib_commonjs && rimraf lib_esmodule",
     "build:commonjs": "rimraf lib_commonjs && ngc -p tsconfig.json",
@@ -36,21 +36,22 @@
   "typings": "./lib_commonjs/dnd.module.d.ts",
   "homepage": "https://github.com/akserg/ng2-dnd#readme",
   "peerDependencies": {
-    "@angular/core": "^4.0.0 || ^5.0.0 || ^9.0.0 || ^18.0.0",
-    "@angular/forms": "^4.0.0 || ^5.0.0 || ^9.0.0 || ^18.0.0"
+    "@angular/core": "^4.0.0 || ^5.0.0 || ^9.0.0 || ^18.0.0 || ^20.0.0",
+    "@angular/forms": "^4.0.0 || ^5.0.0 || ^9.0.0 || ^18.0.0 || ^20.0.0"
   },
   "dependencies": {
     "tslib": "^2.8.1"
   },
   "devDependencies": {
-    "@angular/common": "^18.2.6",
-    "@angular/compiler": "^18.2.6",
-    "@angular/compiler-cli": "^18.2.6",
-    "@angular/core": "^18.2.6",
+    "@angular/common": "^20.3.0",
+    "@angular/compiler": "^20.3.0",
+    "@angular/compiler-cli": "^20.3.0",
+    "@angular/core": "^20.3.0",
+    "@angular/forms": "^20.3.0",
     "@types/hammerjs": "^2.0.46",
     "@types/jasmine": "^5.1.4",
     "@types/node": "^22.9.0",
-    "ng-packagr": "^18.0.0",
+    "ng-packagr": "^20.3.0",
     "rimraf": "^6.0.1"
   },
   "engines": {
